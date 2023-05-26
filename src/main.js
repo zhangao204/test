@@ -31,5 +31,5 @@ app
             notify: {}
         }
     })
-    .use(VueMarkdownEditor)
+    // .use(VueMarkdownEditor)
     .mount('#app')

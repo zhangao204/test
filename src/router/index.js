@@ -5,23 +5,23 @@ import {getToken} from '@/utils/auth.js'
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
-        {
-            path: '/',
-            name: 'INDEX',
-            redirect: '/home',
-            component: () => import('@/views/Layout.vue'),
-            children: [
-                {
-                    path: 'home',
-                    component: () => import('@/views/page/HomePage.vue')
-                },
-                {
-                    path: 'post/:uuid',
-                    props: true,
-                    component: () => import('@/views/page/DetailPage.vue')
-                }
-            ]
-        },
+        // {
+        //     path: '/',
+        //     name: 'INDEX',
+        //     redirect: '/home',
+        //     component: () => import('@/views/Layout.vue'),
+        //     children: [
+        //         {
+        //             path: 'home',
+        //             component: () => import('@/views/page/HomePage.vue')
+        //         },
+        //         {
+        //             path: 'post/:uuid',
+        //             props: true,
+        //             component: () => import('@/views/page/DetailPage.vue')
+        //         }
+        //     ]
+        // },
         // {
         //     path: '/admin',
         //     name: 'ADMIN',
