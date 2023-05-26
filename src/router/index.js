@@ -22,35 +22,35 @@ const router = createRouter({
                 }
             ]
         },
-        {
-            path: '/admin',
-            name: 'ADMIN',
-            redirect: '/admin/home',
-            component: () => import('@/views/page/admin/Layout.vue'),
-            children: [
-                {
-                    path: 'home',
-                    name: 'HOME',
-                    component: () => import('@/views/page/admin/HomePage.vue')
-                },
-                {
-                    path: 'post',
-                    name: 'POST',
-                    component: () => import('@/views/page/admin/PostPage.vue')
-                },
-                {
-                    path: 'edit/:uuid',
-                    name: 'EDIT',
-                    props: true,
-                    component: () => import('@/views/page/admin/EditPage.vue'),
-                },
-            ]
-        },
-        {
-            path: '/login',
-            name: 'LOGIN',
-            component: () => import('@/views/Login.vue')
-        },
+        // {
+        //     path: '/admin',
+        //     name: 'ADMIN',
+        //     redirect: '/admin/home',
+        //     component: () => import('@/views/page/admin/Layout.vue'),
+        //     children: [
+        //         {
+        //             path: 'home',
+        //             name: 'HOME',
+        //             component: () => import('@/views/page/admin/HomePage.vue')
+        //         },
+        //         {
+        //             path: 'post',
+        //             name: 'POST',
+        //             component: () => import('@/views/page/admin/PostPage.vue')
+        //         },
+        //         {
+        //             path: 'edit/:uuid',
+        //             name: 'EDIT',
+        //             props: true,
+        //             component: () => import('@/views/page/admin/EditPage.vue'),
+        //         },
+        //     ]
+        // },
+        // {
+        //     path: '/login',
+        //     name: 'LOGIN',
+        //     component: () => import('@/views/Login.vue')
+        // },
         {
             path: '/:pathMatch(.*)*',
             name: 'NOT FOUND',
