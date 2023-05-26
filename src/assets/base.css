@@ -1,0 +1,14 @@
+:root {
+}
+
+:root {
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+    }
+}
+
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
