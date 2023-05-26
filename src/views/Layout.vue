@@ -19,10 +19,14 @@
     </div>
 </template>
 
-<script setup>
+<script>
 import Header from '@/components/Header.vue'
 import InfoCard from '@/components/InfoCard.vue'
 import Footer from '@/components/Footer.vue'
+
+export default {
+    components: {Header, InfoCard, Footer},
+}
 </script>
 
 <style scoped lang="sass">

@@ -5,47 +5,47 @@ import {getToken} from '@/utils/auth.js'
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
-        {
-            path: '/',
-            name: 'INDEX',
-            redirect: '/home',
-            component: () => import('@/views/Layout.vue'),
-            children: [
-                {
-                    path: 'home',
-                    component: () => import('@/views/page/HomePage.vue')
-                },
-                {
-                    path: 'post/:uuid',
-                    props: true,
-                    component: () => import('@/views/page/DetailPage.vue')
-                }
-            ]
-        },
-        {
-            path: '/admin',
-            name: 'ADMIN',
-            redirect: '/admin/home',
-            component: () => import('@/views/page/admin/Layout.vue'),
-            children: [
-                {
-                    path: 'home',
-                    name: 'HOME',
-                    component: () => import('@/views/page/admin/HomePage.vue')
-                },
-                {
-                    path: 'post',
-                    name: 'POST',
-                    component: () => import('@/views/page/admin/PostPage.vue')
-                },
-                {
-                    path: 'edit/:uuid',
-                    name: 'EDIT',
-                    props: true,
-                    component: () => import('@/views/page/admin/EditPage.vue'),
-                },
-            ]
-        },
+        // {
+        //     path: '/',
+        //     name: 'INDEX',
+        //     redirect: '/home',
+        //     component: () => import('@/views/Layout.vue'),
+        //     children: [
+        //         {
+        //             path: 'home',
+        //             component: () => import('@/views/page/HomePage.vue')
+        //         },
+        //         {
+        //             path: 'post/:uuid',
+        //             props: true,
+        //             component: () => import('@/views/page/DetailPage.vue')
+        //         }
+        //     ]
+        // },
+        // {
+        //     path: '/admin',
+        //     name: 'ADMIN',
+        //     redirect: '/admin/home',
+        //     component: () => import('@/views/page/admin/Layout.vue'),
+        //     children: [
+        //         {
+        //             path: 'home',
+        //             name: 'HOME',
+        //             component: () => import('@/views/page/admin/HomePage.vue')
+        //         },
+        //         {
+        //             path: 'post',
+        //             name: 'POST',
+        //             component: () => import('@/views/page/admin/PostPage.vue')
+        //         },
+        //         {
+        //             path: 'edit/:uuid',
+        //             name: 'EDIT',
+        //             props: true,
+        //             component: () => import('@/views/page/admin/EditPage.vue'),
+        //         },
+        //     ]
+        // },
         {
             path: '/login',
             name: 'LOGIN',

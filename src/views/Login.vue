@@ -31,7 +31,7 @@
     </div>
 </template>
 
-<script setup>
+<script>
 import {ref} from 'vue'
 import {useRouter} from 'vue-router'
 import Notify from '@/utils/notify.js'
@@ -71,6 +71,17 @@ const onSubmit = () => {
 const onReset = () => {
     email.value = null
     password.value = null
+}
+
+export default {
+    data() {
+        return {
+            email,
+            password,
+            onSubmit,
+            onReset
+        }
+    }
 }
 </script>
 
